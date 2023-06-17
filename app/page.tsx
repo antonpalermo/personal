@@ -1,3 +1,5 @@
+import Introduction from '@components/introduction'
+
 export default function Home() {
-  return <main className="min-h-screen"></main>
+  return <Introduction />
 }
