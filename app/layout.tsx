@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, 'py-8')}>
         <Navbar />
-        <main className="container mx-auto min-h-screen w-6/12">
+        <main className="container mx-auto min-h-screen w-full md:w-6/12">
           {children}
         </main>
       </body>
