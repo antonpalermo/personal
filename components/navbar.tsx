@@ -36,6 +36,7 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
+              aria-label={`${link.label} link`}
               className="block rounded p-2 hover:bg-muted"
               target="_blank"
             >
