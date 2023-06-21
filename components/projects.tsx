@@ -3,23 +3,23 @@
 import { Card } from '@components/ui/card'
 
 import Image from 'next/image'
+import useEmblaCarousel from 'embla-carousel-react'
+
 import ShellContainer from '@components/shell-container'
 
 export default function Projects() {
+  const [emblaRef] = useEmblaCarousel({ loop: true, align: 'center' }, [])
+
   return (
     <ShellContainer>
       <h1 className="mb-2 text-lg font-bold">Projects</h1>
       <p className="leading-relaxed">Collection of my awesome projects</p>
-      <div className="grid grid-cols-2 gap-3 mt-5">
-        <Card>
-          <Image
-            src="https://res.cloudinary.com/dbndyylmv/image/upload/v1687189039/covers/rick_and_morty_app_ny33iz.png"
-            alt="Rick and Morty Cover Image"
-            width={200}
-            height={200}
-          />
-        </Card>
-        <Card></Card>
+      <div ref={emblaRef} className="mt-5 overflow-hidden">
+        <div className="flex flex-row items-start">
+          <Card className="mx-2 flex-[0_0_60%] shadow">s</Card>
+          <Card className="mx-2 flex-[0_0_60%] shadow">a</Card>
+          <Card className="mx-2 flex-[0_0_60%] shadow">d</Card>
+        </div>
       </div>
     </ShellContainer>
   )
