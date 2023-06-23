@@ -17,11 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'py-8 bg-slate-100')}>
-        <Navbar />
-        <main className="container mx-auto min-h-screen w-full md:w-6/12">
-          {children}
-        </main>
+      <body className={cn(inter.className, 'bg-slate-100 py-8')}>
+        {children}
       </body>
     </html>
   )

@@ -53,7 +53,7 @@ export default function Navbar() {
               {link.icon}
             </Link>
           ))}
-          <Button size="sm">Contacts</Button>
+
         </div>
       </div>
     </nav>
