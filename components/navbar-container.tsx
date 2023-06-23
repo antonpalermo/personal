@@ -5,7 +5,5 @@ export interface NavbarContainerProps {
 }
 
 export default function NavbarContainer({ children }: NavbarContainerProps) {
-  return (
-    <div className="inline-flex items-center justify-evenly">{children}</div>
-  )
+  return <div className="inline-flex items-center space-x-1">{children}</div>
 }

@@ -17,7 +17,7 @@ const socialLinks: Navigation[] = [
 
 export default function SocialLinks() {
   return (
-    <div className="inline-flex space-x-3">
+    <div className="inline-flex space-x-1">
       {socialLinks.map(link => (
         <Link
           key={link.label}
