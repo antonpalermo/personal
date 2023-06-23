@@ -2,6 +2,7 @@
 
 import { Github, TwitterIcon } from 'lucide-react'
 import { Button } from '@components/ui/button'
+
 import Link from 'next/link'
 
 interface NavigationLink {
@@ -28,10 +29,19 @@ export default function Navbar() {
     <nav className="container mx-auto w-full md:w-6/12">
       <div className="inline-flex w-full items-center justify-between py-4">
         <div>
-          <h1 className="text-lg font-bold">antonpalermo</h1>
+          <Link href={'/'} className="text-lg font-bold">
+            antonpalermo
+          </Link>
           <p className="text-muted-foreground">Build! Build! Build!</p>
         </div>
         <div className="inline-flex items-center space-x-2">
+          <Link
+            href={'/experience'}
+            aria-label="Work Expirence"
+            className="font-medium text-muted-foreground hover:font-semibold hover:text-gray-950"
+          >
+            Experience
+          </Link>
           {links.map(link => (
             <Link
               key={link.label}
