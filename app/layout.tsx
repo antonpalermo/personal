@@ -17,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'bg-slate-100 py-8')}>
-        {children}
-      </body>
+      <body className={cn(inter.className, 'py-8')}>{children}</body>
     </html>
   )
 }

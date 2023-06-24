@@ -6,7 +6,7 @@ export default function Brand() {
       <Link href={'/'} className="text-lg font-bold">
         antonpalermo
       </Link>
-      <p className="text-muted-foreground">Build the web!</p>
+      <p className="text-sm text-muted-foreground">Build the web!</p>
     </div>
   )
 }
