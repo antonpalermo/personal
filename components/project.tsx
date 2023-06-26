@@ -19,6 +19,7 @@ export default function Project({ project }: ProjectProps) {
           alt={`${project.title} cover image`}
           style={{ objectFit: 'cover' }}
           quality={50}
+          priority
         />
       </div>
       <div className="border-t border-slate-50 p-2">

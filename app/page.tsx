@@ -1,10 +1,12 @@
 import Brand from '@components/branding'
+import Experience from '@components/experience'
 import SocialLinks from '@components/social-links'
+import ShellContainer from '@components/shell-container'
 import NavbarContainer from '@components/navbar-container'
+import ProjectsCarousel from '@components/projects-carousel'
 
 import { Button } from '@components/ui/button'
-import ShellContainer from '@components/shell-container'
-import ProjectsCarousel from '@components/projects-carousel'
+import { expirences } from '@lib/experiences'
 
 export default function Home() {
   return (
@@ -26,6 +28,17 @@ export default function Home() {
           Collection of my awesome projects
         </p>
         <ProjectsCarousel />
+      </ShellContainer>
+      <ShellContainer>
+        <h1 className="text-lg font-bold">Work Experience</h1>
+        <p className="text-sm text-slate-500">
+          Companies and positions I have worked for.
+        </p>
+        <div className="mt-5 space-y-3 py-2">
+          {expirences.map(exp => (
+            <Experience key={exp.company} experience={exp} />
+          ))}
+        </div>
       </ShellContainer>
     </main>
   )
