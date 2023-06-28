@@ -34,12 +34,13 @@ export default function Home() {
         <p className="text-sm text-slate-500">
           Companies and positions I have worked for.
         </p>
-        <div className="mt-5 space-y-3 py-2">
+        <div className="mt-5 space-y-5 py-2">
           {expirences.map(exp => (
             <Experience key={exp.company} experience={exp} />
           ))}
         </div>
       </ShellContainer>
+      <footer className=""></footer>
     </main>
   )
 }

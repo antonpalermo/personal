@@ -11,20 +11,20 @@ export const expirences: Experience[] = [
     title: 'IT Support Sepecialist',
     company: 'Dragonpay Corporation',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis turpis, non tincidunt orci pulvinar quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eu quam eu pharetra.'
+      'API support and provide assistance to our merchants who consumes our services.'
   },
   {
     duration: 'Jun 2021 - Sep 2021',
     title: 'Freelance - Web Development',
     company: 'J4SC2 - Security Agency',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis turpis, non tincidunt orci pulvinar quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eu quam eu pharetra.'
+      'Freelance work where we create a business website for our very first client. '
   },
   {
     duration: 'Oct 2017 - Jun 2021',
     title: 'Desktop Support Engineer',
     company: 'H2 Software - Client: Eastwest Bank',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat pellentesque urna, in cursus ligula rutrum eu. Mauris lacinia facilisis pulvinar. Sed quis lectus malesuada, pretium ligula aliquam, hendrerit enim.'
+      'More of a technical support role. Where I provide assistance on hardware or software concern of our clients inhouse applications.'
   }
 ]
