@@ -8,6 +8,7 @@ import Brand from '@components/branding'
 import NavbarContainer from '@components/navbar-container'
 import SocialLinks from '@components/social-links'
 import { Button } from '@components/ui/button'
+import ThemeSelection from '@components/theme-selection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function RootLayout({
             <Brand />
             <NavbarContainer>
               <SocialLinks />
+              <ThemeSelection />
               <Button size="sm">Contacts</Button>
             </NavbarContainer>
           </nav>
