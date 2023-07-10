@@ -1,15 +1,16 @@
 import '@app/globals.css'
 
 import { cn } from '@lib/utils'
+import { Heart } from 'lucide-react'
 import { Inter } from 'next/font/google'
 
-import { Heart } from 'lucide-react'
-import Brand from '@components/branding'
-import NavbarContainer from '@components/navbar-container'
-import SocialLinks from '@components/social-links'
 import { Button } from '@components/ui/button'
-import ThemeSelection from '@components/theme-selection'
+
+import Brand from '@components/branding'
+import SocialLinks from '@components/social-links'
 import ThemeProvider from '@components/theme-provider'
+import ThemeSelection from '@components/theme-selection'
+import NavbarContainer from '@components/navbar-container'
 
 const inter = Inter({ subsets: ['latin'] })
 

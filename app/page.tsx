@@ -1,11 +1,7 @@
-import Brand from '@components/branding'
 import Experience from '@components/experience'
-import SocialLinks from '@components/social-links'
 import ShellContainer from '@components/shell-container'
-import NavbarContainer from '@components/navbar-container'
 import ProjectsCarousel from '@components/projects-carousel'
 
-import { Button } from '@components/ui/button'
 import { expirences } from '@lib/experiences'
 
 export default function Home() {

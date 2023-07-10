@@ -1,11 +1,9 @@
 'use client'
 
-import Image from 'next/image'
-import useEmblaCarousel from 'embla-carousel-react'
+import { projects } from '@lib/projects'
 
 import Project from '@components/project'
-
-import { projects } from '@lib/projects'
+import useEmblaCarousel from 'embla-carousel-react'
 
 export default function ProjectsCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true, align: 'center' }, [])
