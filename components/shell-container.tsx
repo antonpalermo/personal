@@ -1,9 +1,9 @@
 'use client'
 
-import * as React from 'react'
+import { ReactNode } from 'react'
 
 interface ShellContainerProps {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export default function ShellContainer({ children }: ShellContainerProps) {

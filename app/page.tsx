@@ -1,16 +1,12 @@
-import Brand from '@components/branding'
 import Experience from '@components/experience'
-import SocialLinks from '@components/social-links'
 import ShellContainer from '@components/shell-container'
-import NavbarContainer from '@components/navbar-container'
 import ProjectsCarousel from '@components/projects-carousel'
 
-import { Button } from '@components/ui/button'
 import { expirences } from '@lib/experiences'
 
 export default function Home() {
   return (
-    <main className="container mx-auto min-h-screen w-full md:w-6/12">
+    <main className="container mx-auto min-h-screen w-full text-foreground md:w-6/12">
       <p className="py-5 leading-relaxed">
         Hola, it&apos;s nice that you stop by. I&apos;m a self tought web
         developer who loves working on my fullstack react projects.

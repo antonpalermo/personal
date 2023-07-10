@@ -11,7 +11,7 @@ export interface ProjectProps {
 
 export default function Project({ project }: ProjectProps) {
   return (
-    <div className="h-full rounded p-1 shadow">
+    <div className="h-full rounded p-1 text-foreground shadow">
       <div className="relative h-44 rounded">
         <Image
           fill={true}
@@ -26,7 +26,7 @@ export default function Project({ project }: ProjectProps) {
         <Link href={project.link} className="font-semibold">
           {project.title}
         </Link>
-        <p className="text-sm text-slate-500">{project.description}</p>
+        <p className="text-sm text-muted-foreground">{project.description}</p>
       </div>
     </div>
   )
