@@ -36,7 +36,6 @@ export default function RootLayout({
               <NavbarContainer>
                 <SocialLinks />
                 <ThemeSelection />
-                <Button size="sm">Contacts</Button>
               </NavbarContainer>
             </nav>
           </div>
