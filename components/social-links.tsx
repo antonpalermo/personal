@@ -1,5 +1,6 @@
 import { Navigation } from '@lib/navigation'
 import { Github, TwitterIcon } from 'lucide-react'
+
 import Link from 'next/link'
 
 const socialLinks: Navigation[] = [
@@ -23,7 +24,7 @@ export default function SocialLinks() {
           key={link.label}
           href={link.href}
           aria-label={`${link.label} link`}
-          className="inline-block rounded p-2 hover:bg-slate-200"
+          className="block rounded-md p-2 hover:bg-accent hover:text-accent-foreground"
           target="_blank"
         >
           {link.icon}
