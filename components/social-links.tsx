@@ -12,7 +12,7 @@ const socialLinks: Navigation[] = [
   {
     label: 'twitter',
     icon: <TwitterIcon className="h-5 w-5" />,
-    href: 'https://twitter.com/iamantonangelo'
+    href: 'https://twitter.com/angeluuu_dev'
   }
 ]
 
