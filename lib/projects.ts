@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     title: 'Travel Journal',
     difficulty: 'Basic',
-    description: '',
+    description: 'Simple react that display based on the list provided.',
     link: 'https://travel-journal-virid.vercel.app/',
     source:
       'https://res.cloudinary.com/dbndyylmv/image/upload/f_auto,q_auto/v1/covers/ybnedebsjnnxxd9gk84m'
@@ -42,14 +42,15 @@ export const projects: Project[] = [
   {
     title: 'Business Card',
     difficulty: 'Basic',
-    description: '',
+    description: 'Simple business card',
     link: 'https://business-card-roan.vercel.app/',
     source:
       'https://res.cloudinary.com/dbndyylmv/image/upload/f_auto,q_auto/v1/covers/v85ouuh7cggcztofrtoy'
   },
   {
     title: 'Cat Profiles',
-    description: '',
+    description:
+      'React simple course, where I need to create a simple cat profiles.',
     difficulty: 'Basic',
     link: 'https://contact-app-jade-ten.vercel.app/',
     source:
@@ -58,7 +59,7 @@ export const projects: Project[] = [
   {
     title: 'Ninja Listing',
     difficulty: 'Intermidiate',
-    description: '',
+    description: 'This is one of my first next project. ',
     link: 'https://contact-app-jade-ten.vercel.app/',
     source:
       'https://res.cloudinary.com/dbndyylmv/image/upload/f_auto,q_auto/v1/covers/xhaytlxlidbjb8hgdrsx'
@@ -66,7 +67,7 @@ export const projects: Project[] = [
   {
     title: 'React Facts',
     difficulty: 'Basic',
-    description: '',
+    description: 'My very first react app built.',
     link: 'https://react-info-one.vercel.app/',
     source:
       'https://res.cloudinary.com/dbndyylmv/image/upload/f_auto,q_auto/v1/covers/arwxr72looizaagxsepf'

@@ -3,6 +3,8 @@ import ShellContainer from '@components/shell-container'
 import ProjectsCarousel from '@components/projects-carousel'
 
 import { expirences } from '@lib/experiences'
+
+import { Input } from '@components/ui/input'
 import { Button } from '@components/ui/button'
 
 export default function Home() {
@@ -36,18 +38,9 @@ export default function Home() {
           Got something in mind? Let&apos;s talk!
         </p>
         <div className="mt-5 inline-flex w-full items-center justify-between space-y-5 py-2">
-          <div>
-            <p>Are you intrested in my work?</p>
-          </div>
-          <div className="rounded-md bg-accent p-1">
-            <input
-              type="email"
-              name="email_add"
-              id="email_add"
-              className="border-transparent bg-accent px-4 py-2 text-sm focus:border-transparent focus:ring-0"
-              placeholder="JaneDoe@example.com"
-            />
-            <Button>Submit</Button>
+          <div className="flex w-full max-w-sm items-center space-x-2">
+            <Input type="email" placeholder="Email" />
+            <Button type="submit">Subscribe</Button>
           </div>
         </div>
       </ShellContainer>

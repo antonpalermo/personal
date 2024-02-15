@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import SocialLinks from '@/components/social-links'
 import ThemeSelector from '@/components/theme/selector'
+import { Button } from './ui/button'
 
 export default function Navbar() {
   return (
@@ -13,10 +14,13 @@ export default function Navbar() {
             <Link href={'/'} className="text-lg font-bold">
               antonpalermo
             </Link>
-            <p className="text-sm text-muted-foreground">Build the web!</p>
+            <p className="text-muted-foreground">Build the web!</p>
           </div>
           {/* navbar buttons */}
           <div className="flex items-center space-x-1">
+            <Button asChild>
+              <Link href={'/projects'}>Projects</Link>
+            </Button>
             <SocialLinks />
             <ThemeSelector />
           </div>

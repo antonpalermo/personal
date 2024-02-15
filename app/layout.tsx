@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="sm:px-15 mx-auto max-w-5xl px-10">{children}</main>
+          <main className="mx-auto max-w-5xl px-10 sm:px-28">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
