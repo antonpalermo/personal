@@ -1,17 +1,18 @@
 import { Navigation } from '@lib/navigation'
-import { Github, TwitterIcon } from 'lucide-react'
+import { SiGithub as Github, SiX as X } from 'react-icons/si'
 
 import Link from 'next/link'
+import { Button } from './ui/button'
 
 const socialLinks: Navigation[] = [
   {
     label: 'github',
-    icon: <Github className="h-5 w-5" />,
+    icon: <Github />,
     href: 'https://github.com/antonpalermo'
   },
   {
     label: 'twitter',
-    icon: <TwitterIcon className="h-5 w-5" />,
+    icon: <X />,
     href: 'https://twitter.com/angeluuu_dev'
   }
 ]
@@ -24,10 +25,12 @@ export default function SocialLinks() {
           key={link.label}
           href={link.href}
           aria-label={`${link.label} link`}
-          className="block rounded-md p-2 hover:bg-accent hover:text-accent-foreground"
+          passHref
           target="_blank"
         >
-          {link.icon}
+          <Button variant={'ghost'} size={'icon'}>
+            {link.icon}
+          </Button>
         </Link>
       ))}
     </div>

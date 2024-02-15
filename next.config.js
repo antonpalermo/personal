@@ -7,7 +7,8 @@ const nextConfig = {
         hostname: 'res.cloudinary.com'
       }
     ]
-  }
+  },
+  transpilePackages: ['react-icons']
 }
 
 module.exports = nextConfig
