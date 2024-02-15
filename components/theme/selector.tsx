@@ -14,7 +14,7 @@ import {
 import { Button } from '@components/ui/button'
 import { useEffect, useState } from 'react'
 
-export default function ThemeSelection() {
+export default function ThemeSelector() {
   const { setTheme, theme } = useTheme()
   const [mounted, setMounted] = useState<boolean>(false)
 
@@ -29,7 +29,7 @@ export default function ThemeSelection() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="p-2">
+        <Button variant="ghost" size="icon">
           {theme === 'dark' ? (
             <Moon className="h-5 w-5" />
           ) : (

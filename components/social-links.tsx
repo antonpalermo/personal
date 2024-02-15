@@ -19,7 +19,7 @@ const socialLinks: Navigation[] = [
 
 export default function SocialLinks() {
   return (
-    <div className="inline-flex space-x-1">
+    <>
       {socialLinks.map(link => (
         <Link
           key={link.label}
@@ -33,6 +33,6 @@ export default function SocialLinks() {
           </Button>
         </Link>
       ))}
-    </div>
+    </>
   )
 }
