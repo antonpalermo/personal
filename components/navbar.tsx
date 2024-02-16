@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import SocialLinks from '@/components/social-links'
 import ThemeSelector from '@/components/theme/selector'
 import { Button } from './ui/button'
 
@@ -21,7 +20,6 @@ export default function Navbar() {
             <Button asChild>
               <Link href={'/projects'}>Projects</Link>
             </Button>
-            <SocialLinks />
             <ThemeSelector />
           </div>
         </div>
