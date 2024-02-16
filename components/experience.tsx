@@ -6,19 +6,16 @@ export interface ExperienceProps {
 
 export default function Experience({ experience }: ExperienceProps) {
   return (
-    <div>
-      <span className="text-sm font-medium text-muted-foreground">
-        {experience.duration}
-      </span>
-      <div className="mb-3">
-        <h2 className="text-base font-semibold text-foreground">
-          {experience.title}
-        </h2>
-        <p className="text-sm font-medium text-muted-foreground">
-          {experience.company}
+    <div className="space-y-3">
+      <div className="space-y-1">
+        <h2 className="text-lg font-medium">{experience.title}</h2>
+        <p className="text-sm text-muted-foreground">
+          {experience.company} &bull; {experience.duration}
         </p>
       </div>
-      <p className="line-clamp-2 text-foreground">{experience.description}</p>
+      <p className="leading-relaxed text-muted-foreground">
+        {experience.description}
+      </p>
     </div>
   )
 }

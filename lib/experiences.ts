@@ -11,14 +11,14 @@ export const expirences: Experience[] = [
     title: 'IT Support Sepecialist',
     company: 'Dragonpay Corporation',
     description:
-      'API support and provide assistance to our merchants who consumes our services.'
+      'Provides assistance to our clients by meeting with them to offer solutions, suggestions, and guidance on how to consume our API and other services.'
   },
   {
     duration: 'Jun 2021 - Sep 2021',
-    title: 'Freelance - Web Development',
+    title: 'Freelance - Web Developer',
     company: 'J4SC2 - Security Agency',
     description:
-      'Freelance work where we create a business website for our very first client. '
+      'My first freelance project was a test of my skills. Where we developed a static website for a startup security agency and setup a backend that acts as a STMP server.'
   },
   {
     duration: 'Oct 2017 - Jun 2021',

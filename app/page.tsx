@@ -11,12 +11,12 @@ export default function Home() {
         developer specializing in JavaScript technologies, especially React and
         many more 💪!
       </p>
-      <div>
+      <div className="space-y-5 sm:space-y-10">
         <Heading
           heading="Work Experience"
-          description="Companies and positions I have worked for."
+          description="Companies I've worked in, and the roles I've held."
         />
-        <div className="mt-5 space-y-5 py-2">
+        <div className="mt-5 space-y-5 py-2 sm:space-y-10">
           {expirences.map(exp => (
             <Experience key={exp.company} experience={exp} />
           ))}
