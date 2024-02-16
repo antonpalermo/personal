@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
-import ThemeSelector from '@/components/theme/selector'
-import { Button } from './ui/button'
+import { Button } from '@/components/ui/button'
+
+import ThemeToggle from '@/components/theme/toggle'
 
 export default function Navbar() {
   return (
@@ -16,11 +17,11 @@ export default function Navbar() {
             <p className="text-muted-foreground">Build the web!</p>
           </div>
           {/* navbar buttons */}
-          <div className="flex items-center space-x-1">
+          <div className="flex items-center space-x-2">
             <Button asChild>
               <Link href={'/projects'}>Projects</Link>
             </Button>
-            <ThemeSelector />
+            <ThemeToggle />
           </div>
         </div>
       </div>
