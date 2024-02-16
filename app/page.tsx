@@ -1,26 +1,27 @@
 import Experience from '@components/experience'
-import ShellContainer from '@components/shell-container'
+import Heading from '@components/heading'
 
 import { expirences } from '@lib/experiences'
 
 export default function Home() {
   return (
-    <>
-      <p className="py-5 leading-relaxed">
-        Hola, it&apos;s nice that you stop by. I&apos;m a self tought web
-        developer who loves working on my fullstack react projects.
+    <div className="w-full space-y-5 sm:space-y-10">
+      <p className="py-5 text-xl leading-relaxed">
+        Hello there 👋, thanks for stopping by! I'm Anton, a self-taught web
+        developer specializing in JavaScript technologies, especially React and
+        many more 💪!
       </p>
-      <ShellContainer>
-        <h1 className="text-lg font-bold">Work Experience</h1>
-        <p className="text-sm text-muted-foreground">
-          Companies and positions I have worked for.
-        </p>
+      <div>
+        <Heading
+          heading="Work Experience"
+          description="Companies and positions I have worked for."
+        />
         <div className="mt-5 space-y-5 py-2">
           {expirences.map(exp => (
             <Experience key={exp.company} experience={exp} />
           ))}
         </div>
-      </ShellContainer>
-    </>
+      </div>
+    </div>
   )
 }

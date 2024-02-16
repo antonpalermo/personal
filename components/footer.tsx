@@ -7,14 +7,19 @@ import {
 
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { Navigation } from '@lib/navigation'
 
 import Heading from '@/components/heading'
+
+type Social = {
+  label: string
+  icon?: JSX.Element
+  href: string
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
-  const socialLinks: Navigation[] = [
+  const socialLinks: Social[] = [
     {
       label: 'github',
       icon: <Github className="h-5 w-5" />,
@@ -38,7 +43,7 @@ export default function Footer() {
         <div className="space-y-10 py-10 sm:py-16">
           <Heading
             heading="Get in touch"
-            description="Got something in mind? You can reach me on the following socials"
+            description="Got something in mind? You can reach me on the following social media channels."
           />
           <div className="flex w-full flex-col items-start justify-between sm:flex-row sm:items-center">
             <div className="mb-3 inline-flex space-x-3 sm:mb-0">
