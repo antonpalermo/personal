@@ -15,7 +15,12 @@ export default function ThemeToggle() {
   }
 
   return (
-    <Button variant="secondary" size="icon" onClick={toggle}>
+    <Button
+      variant="secondary"
+      size="icon"
+      onClick={toggle}
+      aria-label="theme toggle"
+    >
       {theme === 'dark' ? (
         <Sun className="h-5 w-5" />
       ) : (
