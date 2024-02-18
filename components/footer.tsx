@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import {
-  SiGithub as Github,
   SiX as X,
+  SiGithub as Github,
   SiLinkedin as LinkedIn
 } from 'react-icons/si'
 
-import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 
 import Heading from '@/components/heading'
+import EmailForm from '@/components/emails/form'
 
 type Social = {
   label: string
@@ -46,7 +46,7 @@ export default function Footer() {
             description="Got something in mind? You can reach me on the following social media channels."
           />
           <div className="flex w-full flex-col items-start justify-between sm:flex-row sm:items-center">
-            <div className="mb-3 inline-flex space-x-3 sm:mb-0">
+            <div className="mb-3 inline-flex items-start space-x-3 sm:mb-0">
               {socialLinks.map(link => (
                 <Button
                   key={link.label}
@@ -64,10 +64,7 @@ export default function Footer() {
                 </Button>
               ))}
             </div>
-            <div className="flex w-full max-w-sm items-center space-x-2">
-              <Input type="email" placeholder="Email" />
-              <Button type="submit">Send</Button>
-            </div>
+            <EmailForm />
           </div>
           <p className="text-muted-foreground">
             Created with 💖 by <strong>Anton Palermo</strong> &copy;{' '}
