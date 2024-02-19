@@ -45,7 +45,7 @@ export default function Footer() {
             heading="Get in touch"
             description="Got something in mind? You can reach me on the following social media channels."
           />
-          <div className="flex w-full flex-col items-start justify-between sm:flex-row sm:items-center">
+          <div className="flex min-h-20 w-full flex-col items-start justify-between sm:flex-row">
             <div className="mb-3 inline-flex items-start space-x-3 sm:mb-0">
               {socialLinks.map(link => (
                 <Button
@@ -58,6 +58,7 @@ export default function Footer() {
                     href={link.href}
                     aria-label={`${link.label} link`}
                     target="_blank"
+                    className="block"
                   >
                     {link.icon}
                   </Link>

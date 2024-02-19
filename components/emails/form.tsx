@@ -7,7 +7,13 @@ import { cn } from '@lib/utils'
 
 import { Input } from '@components/ui/input'
 import { Button } from '@components/ui/button'
-import { Form, FormControl, FormField, FormItem } from '@/components/ui/form'
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage
+} from '@/components/ui/form'
 
 import schema from '@/components/emails/schema'
 
@@ -24,7 +30,7 @@ export default function EmailForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
-        <div className="flex w-full max-w-sm items-center space-x-2">
+        <div className="flex w-full max-w-sm items-start space-x-2">
           <FormField
             name="email"
             control={form.control}
@@ -43,12 +49,12 @@ export default function EmailForm() {
                     )}
                   />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
           <Button type="submit">Send</Button>
         </div>
-        {form.formState.errors && <p>{form.formState.errors.email?.message}</p>}
       </form>
     </Form>
   )
