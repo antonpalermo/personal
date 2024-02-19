@@ -1,7 +1,7 @@
 import nm from 'nodemailer'
 
 type Payload = {
-  recipient: string
+  to: string
   subject: string
   content: string
 }
@@ -21,6 +21,7 @@ async function sendEmail(data: Payload) {
 
   return await transport.sendMail({
     from: isProduction ? process.env.SMTP_USER : process.env.SMTP_USER_UAT,
+    sender: process.env.SMTP_SENDER,
     ...data
   })
 }

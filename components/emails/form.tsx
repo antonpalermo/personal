@@ -24,7 +24,14 @@ export default function EmailForm() {
   })
 
   async function onSubmit(data: z.infer<typeof schema>) {
-    console.log('sample')
+    const request = await fetch('/api/mailer', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+        authorization: 'Basic ' + process.env.NEXT_PUBLIC_MAILER_API_KEY
+      }
+    })
   }
 
   return (
