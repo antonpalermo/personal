@@ -24,14 +24,19 @@ export default function EmailForm() {
   })
 
   async function onSubmit(data: z.infer<typeof schema>) {
-    const request = await fetch('/api/mailer', {
+    const request = await fetch('https://api.useplunk.com/v1/track', {
       method: 'POST',
-      body: JSON.stringify(data),
       headers: {
         'Content-Type': 'application/json',
-        authorization: 'Basic ' + process.env.NEXT_PUBLIC_MAILER_API_KEY
-      }
+        Authorization: 'Bearer ' + process.env.NEXT_PUBLIC_PLUNK_SECRET
+      },
+      body: JSON.stringify({
+        event: 'hello-kind-stranger-template-delivered',
+        email: data.email
+      })
     })
+
+    console.log(request)
   }
 
   return (
