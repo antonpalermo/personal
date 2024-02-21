@@ -65,7 +65,12 @@ export default function Footer() {
                 </Button>
               ))}
             </div>
-            <EmailForm />
+            <div className="max-w-none sm:max-w-sm">
+              <EmailForm />
+              <p className="mt-3 text-muted-foreground">
+                Do you need my resume? Just drop your email below to get a copy.
+              </p>
+            </div>
           </div>
           <p className="text-muted-foreground">
             Created with 💖 by <strong>Anton Palermo</strong> &copy;{' '}
