@@ -9,13 +9,14 @@ import { Input } from '@components/ui/input'
 import { Button } from '@components/ui/button'
 import {
   Form,
-  FormControl,
-  FormField,
   FormItem,
+  FormField,
+  FormControl,
   FormMessage
 } from '@/components/ui/form'
 
 import schema from '@/components/emails/schema'
+import toast from 'react-hot-toast'
 
 export default function EmailForm() {
   const form = useForm<z.infer<typeof schema>>({
@@ -32,7 +33,13 @@ export default function EmailForm() {
       })
     })
 
-    console.log(request)
+    if (!request.status) {
+      return toast.error(
+        'We encountered an error while delivering your request'
+      )
+    }
+
+    return toast.success('Sent!')
   }
 
   return (
@@ -61,7 +68,9 @@ export default function EmailForm() {
               </FormItem>
             )}
           />
-          <Button type="submit">Send</Button>
+          <Button type="submit" disabled={form.formState.isSubmitting}>
+            Send
+          </Button>
         </div>
       </form>
     </Form>
