@@ -50,7 +50,7 @@ export default function EmailForm() {
             name="email"
             control={form.control}
             render={({ field, fieldState }) => (
-              <FormItem>
+              <FormItem className="w-full">
                 <FormControl>
                   <Input
                     type="email"
